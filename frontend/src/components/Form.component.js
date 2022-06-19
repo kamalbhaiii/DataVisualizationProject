@@ -6,7 +6,7 @@ const Form = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-      axios.get('http://localhost:9999/finds').then(res=>res.data).then(json=>setData(json))
+      axios.get('https://dv-project-kamal.herokuapp.com/finds').then(res=>res.data).then(json=>setData(json))
     }, [])
 
     const [vars, setVars] = useState({
